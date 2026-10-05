@@ -1,0 +1,399 @@
+<!-- Image Lightbox -->
+
+<div id="imageLightbox"
+     class="lightbox"
+     onclick="closeImage()">
+
+    <span class="close-button">&times;</span>
+
+    <img id="largeImage"
+         src=""
+         alt="Large Blouse Image">
+
+</div>
+<script>
+
+function openImage(imageSource) {
+
+    document.getElementById("largeImage").src = imageSource;
+
+    document.getElementById("imageLightbox").style.display = "flex";
+
+}
+
+function closeImage() {
+
+    document.getElementById("imageLightbox").style.display = "none";
+
+}
+
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Sewing Arts Center Sakoli - Designer Blouse, Bridal Blouse, Custom Blouse Stitching and Alteration Services.">
+
+    <meta name="keywords"
+          content="blouse designer Sakoli, designer blouse Sakoli, bridal blouse Sakoli, blouse stitching Sakoli">
+
+    <meta name="author"
+          content="Sewing Arts Center">
+
+    <title>
+        Sewing Arts Center Sakoli | Designer Blouse & Stitching
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+<header>
+
+    <div class="logo">
+
+        <h1>Sewing Arts Center</h1>
+
+        <p>Sakoli | Blouse Designer</p>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+    <!-- Navigation -->
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <!-- Home -->
+   <!-- Home Section -->
+
+<section id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <p class="small-title">
+                WELCOME TO
+            </p>
+
+            <h2>
+                Sewing Arts Center
+            </h2>
+
+            <h3>
+                Sakoli's Blouse Designer
+            </h3>
+
+            <p>
+                Beautiful Designer Blouse,
+                Bridal Blouse & Custom Blouse
+                Stitching.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#gallery" class="main-button">
+                    View Designs
+                </a>
+
+                <a href="https://wa.me/917767826171"
+                   target="_blank"
+                   class="whatsapp-button">
+                    💬 WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="images/blouse1.jpg"
+                 alt="Sewing Arts Center Designer Blouse">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Blouse Gallery -->
+<!-- Professional Blouse Gallery -->
+
+<section id="gallery">
+
+    <div class="section-title">
+
+        <p>OUR COLLECTION</p>
+
+        <h2>Beautiful Blouse Designs</h2>
+
+        <span>
+            Explore our latest designer blouse collection.
+        </span>
+
+    </div>
+
+
+    <div class="gallery-container">
+
+        <div class="gallery-card">
+            <img src="images/blouse1.jpg"
+                 alt="Designer Blouse"
+                 onclick="openImage(this.src)">
+            <h3>Designer Blouse</h3>
+        </div>
+
+
+        <div class="gallery-card">
+            <img src="images/blouse2.jpg"
+                 alt="Bridal Blouse"
+                 onclick="openImage(this.src)">
+            <h3>Bridal Blouse</h3>
+        </div>
+
+
+        <div class="gallery-card">
+            <img src="images/blouse3.jpg"
+                 alt="Custom Blouse"
+                 onclick="openImage(this.src)">
+            <h3>Custom Blouse</h3>
+        </div>
+
+
+        <div class="gallery-card">
+            <img src="images/blouse4.jpg"
+                 alt="Back Neck Blouse"
+                 onclick="openImage(this.src)">
+            <h3>Back Neck Design</h3>
+        </div>
+
+
+        <div class="gallery-card">
+            <img src="images/blouse5.jpg"
+                 alt="Handwork Blouse"
+                 onclick="openImage(this.src)">
+            <h3>Handwork Blouse</h3>
+        </div>
+
+
+        <div class="gallery-card">
+            <img src="images/blouse6.jpg"
+                 alt="Latest Blouse Design"
+                 onclick="openImage(this.src)">
+            <h3>Latest Design</h3>
+        </div>
+
+    </div>
+
+</section>
+    <!-- Services -->
+    <section id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Designer Blouse</h3>
+            <p>Beautiful and stylish blouse designs.</p>
+            <h4>Starting from ₹350</h4>
+        </div>
+
+        <div class="service-card">
+            <h3>Bridal Blouse</h3>
+            <p>Special blouse designs for wedding occasions.</p>
+            <h4>Starting from ₹699</h4>
+        </div>
+
+        <div class="service-card">
+            <h3>Custom Blouse</h3>
+            <p>Blouse designed according to your choice.</p>
+            <h4>Starting from ₹299</h4>
+        </div>
+
+        <div class="service-card">
+            <h3>Blouse Alteration</h3>
+            <p>Perfect fitting and alteration service.</p>
+            <h4>Starting from ₹99</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WhatsApp Order Section -->
+
+<section id="order">
+
+    <div class="order-content">
+
+        <div class="order-text">
+
+            <p class="small-title">
+                READY TO ORDER?
+            </p>
+
+            <h2>
+                Book Your Blouse Today
+            </h2>
+
+            <p>
+                अपनी पसंद का blouse design चुनें और
+                fitting, design और stitching के लिए
+                हमसे WhatsApp पर संपर्क करें।
+            </p>
+
+            <a
+                href="https://wa.me/917767826171?text=Hello%20Sewing%20Arts%20Center%2C%20I%20want%20to%20book%20a%20blouse."
+                target="_blank"
+                class="order-button">
+                💬 Book on WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- About -->
+    <!-- About Us Section -->
+
+<section id="about">
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <p class="small-title">
+                ABOUT US
+            </p>
+
+            <h2>
+                Sewing Arts Center
+            </h2>
+
+            <h3>
+                Your Blouse Design & Stitching Partner
+            </h3>
+
+            <p>
+                Sewing Arts Center Sakoli में हम
+                Designer Blouse, Bridal Blouse और
+                Custom Blouse Stitching की सुविधा
+                प्रदान करते हैं।
+            </p>
+
+            <p>
+                हमारा उद्देश्य है कि हर customer को
+                उसकी पसंद और fitting के अनुसार
+                सुंदर और अच्छी quality का blouse
+                तैयार करके दिया जाए।
+            </p>
+
+        </div>
+
+
+        <div class="why-us">
+
+            <h2>Why Choose Us?</h2>
+
+            <div class="why-item">
+                <span>✓</span>
+                <p>Custom Design & Perfect Fitting</p>
+            </div>
+
+            <div class="why-item">
+                <span>✓</span>
+                <p>Designer & Bridal Blouse</p>
+            </div>
+
+            <div class="why-item">
+                <span>✓</span>
+                <p>Quality Stitching</p>
+            </div>
+
+            <div class="why-item">
+                <span>✓</span>
+                <p>Customer's Choice & Design</p>
+            </div>
+
+            <div class="why-item">
+                <span>✓</span>
+                <p>WhatsApp Booking Available</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <div class="map">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6059594139037!2d80.0209433!3d21.088394599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2b754e27c13421%3A0x21443f31da331381!2sSEWING%20ARTS%20CENTER!5e0!3m2!1sen!2sin!4v1791145320481!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>>
+
+</div>
+
+
+    <!-- Footer -->
+   <!-- Footer -->
+
+<footer>
+
+    <h3>Sewing Arts Center</h3>
+
+    <p>
+        Designer Blouse | Bridal Blouse | Custom Blouse
+    </p>
+
+    <p>
+        📍 Sakoli, Maharashtra
+    </p>
+
+    <p>
+        © 2026 Sewing Arts Center. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+
+</html>
